@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plugin/plugin.iml" filepath="$PROJECT_DIR$/plugin/plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginlibrary/pluginlibrary.iml" filepath="$PROJECT_DIR$/pluginlibrary/pluginlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/theta-plugin-camera-api-sample.iml" filepath="$PROJECT_DIR$/theta-plugin-camera-api-sample.iml" />
+    </modules>
+  </component>
+</project>
