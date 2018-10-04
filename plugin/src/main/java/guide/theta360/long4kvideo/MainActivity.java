@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.theta360.pluginsample;
+package guide.theta360.long4kvideo;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

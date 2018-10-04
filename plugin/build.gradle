@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "28.0.2"
     defaultConfig {
-        applicationId "com.theta360.pluginsample"
+        applicationId "com.theta360.long4kvideo"
         minSdkVersion 25
         targetSdkVersion 25
         versionCode 1

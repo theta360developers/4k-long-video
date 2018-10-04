@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.theta360.pluginsample;
+package guide.theta360.long4kvideo;
 
 import android.content.Context;
 import android.hardware.Camera;
@@ -32,6 +32,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -274,7 +275,13 @@ public class CameraFragment extends Fragment {
             mMediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
             mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.UNPROCESSED);
 
-            camcorderProfile.videoCodec = MediaRecorder.VideoEncoder.H264;
+           // camcorderProfile.videoCodec = MediaRecorder.VideoEncoder.H264;
+            /**
+             * available video encoders are listed below. Not sure if the THETA V
+             * will support HEVC officially, but it works in my tests. :-)
+             * https://developer.android.com/reference/android/media/MediaRecorder.VideoEncoder
+             */
+            camcorderProfile.videoCodec = MediaRecorder.VideoEncoder.HEVC;
             camcorderProfile.audioCodec = MediaRecorder.AudioEncoder.AAC;
             camcorderProfile.audioChannels = 1;
 
@@ -292,7 +299,13 @@ public class CameraFragment extends Fragment {
             mMediaRecorder.setMaxDuration(7200000); // max: 120 min
 
 
-            mMediaRecorder.setMaxFileSize(20401094656L); // max: 19 GB
+       //     mMediaRecorder.setMaxFileSize(20401094656L); // max: 19 GB
+            /**
+             * combined size of video and audio files causing file corruption.
+             * trying lower than 18GB.
+             */
+            mMediaRecorder.setMaxFileSize(19327352832L); // max: 18 GB
+
 
             String videoFile = String.format("%s/plugin_%s.mp4", DCIM, getDateTime());
             String wavFile = String.format("%s/plugin_%s.wav", DCIM, getDateTime());
