@@ -66,3 +66,5 @@ the encoder back down to H264.
 3. Press shutter button to take a photo/video
 4. Pull JPEG/MP4/WAV by adb
     "adb pull /sdcard/DCIM/yyyyMMddHHmmss.jpg" ("yyyyMMddHHmmss" is 20180123123456 when it is 12:34:56 Jan 23, 2018.)
+
+![Analytics](https://ga-beacon.appspot.com/UA-73311422-5/4k-long-video-plugin)
