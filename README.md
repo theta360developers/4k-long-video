@@ -8,14 +8,6 @@ video limitation of the standard camera.
 
 The plug-in should be installed into the RICOH THETA V with adb.
 
-## Additional Hacks
-
-* default video encoder is H264. Per the
-[Android Developer API documentation](https://developer.android.com/reference/android/media/MediaRecorder.VideoEncoder)
-for VideoEncoder, this can be changed to HEVC. It works, but does get hot in my tests. If the camera overheats. set
-the encoder back down to H264.
-* you can fiddle around with `mMediaRecorder.setMaxDuration` to try and get a longer video
-
 ## Development Environment
 
 * RICOH THETA V
