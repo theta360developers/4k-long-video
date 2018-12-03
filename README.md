@@ -40,8 +40,6 @@ If you are are compiling from source, follow these steps for installation:
 
 ## Post Production
 
-![premiere pro](doc/img/premiere-pro.jpg)
-
 ### Spatial Media Metadata Injector
 
 You may need to inject the metadata into the video file
@@ -61,6 +59,12 @@ with injected metadata in your applications and on YouTube/Facebook.
 
 ![metadata injected](doc/img/meta-data-injected.jpg)
 
+### Editing Videos
+
+Both Premiere Pro and PowerDirector support HEVC 360° video editing.
+
+
+![premiere pro](doc/img/premiere-pro.jpg)
 
 
 
