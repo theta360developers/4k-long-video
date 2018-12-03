@@ -291,7 +291,10 @@ public class CameraFragment extends Fragment {
                 mMediaRecorder.setVideoEncodingBitRate(32000000); // 32 Mbps
             }else {
                 // for 4K video
-                mMediaRecorder.setVideoEncodingBitRate(56000000); // 56 Mbps
+//                mMediaRecorder.setVideoEncodingBitRate(56000000); // 56 Mbps
+                // trying lower bitrate
+                mMediaRecorder.setVideoEncodingBitRate(32000000); // 32 Mbps
+
             }
             mMediaRecorder.setVideoFrameRate(30); // 30 fps
 //            mMediaRecorder.setMaxDuration(1500000); // max: 25 min
@@ -299,17 +302,23 @@ public class CameraFragment extends Fragment {
             mMediaRecorder.setMaxDuration(7200000); // max: 120 min
 
 
-       //     mMediaRecorder.setMaxFileSize(20401094656L); // max: 19 GB
+            mMediaRecorder.setMaxFileSize(20401094656L); // max: 19 GB
             /**
              * combined size of video and audio files causing file corruption.
              * trying lower than 18GB.
              */
-            mMediaRecorder.setMaxFileSize(19327352832L); // max: 18 GB
+//            mMediaRecorder.setMaxFileSize(19327352832L); // max: 18 GB
 
 
-            String videoFile = String.format("%s/plugin_%s.mp4", DCIM, getDateTime());
+            String videoFile = String.format("%s/100RICOH/4K_HEVC_%s.mp4", DCIM, getDateTime());
             String wavFile = String.format("%s/plugin_%s.wav", DCIM, getDateTime());
-            String videoWavFile = String.format("%s,%s", videoFile, wavFile);
+//            String videoWavFile = String.format("%s,%s", videoFile, wavFile);
+            /**
+             * deleting spatial audio to save on storage
+             * uncomment the line above and comment out the line below to enable
+             * spatial audio
+             */
+            String videoWavFile = String.format("%s", videoFile);
             mMediaRecorder.setOutputFile(videoWavFile);
             mMediaRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
             mMediaRecorder.setOnErrorListener(onErrorListener);
@@ -321,7 +330,7 @@ public class CameraFragment extends Fragment {
                 Log.d("debug", "mMediaRecorder.start()");
 
                 instanceRecordMP4 = new File(videoFile);
-                instanceRecordWAV = new File(wavFile);
+//                instanceRecordWAV = new File(wavFile);
             } catch (IOException | RuntimeException e) {
                 e.printStackTrace();
                 stopMediaRecorder();
@@ -334,7 +343,7 @@ public class CameraFragment extends Fragment {
             } catch (RuntimeException e) {
                 // cancel recording
                 instanceRecordMP4.delete();
-                instanceRecordWAV.delete();
+//                instanceRecordWAV.delete();
                 result = false;
             } finally {
                 stopMediaRecorder();

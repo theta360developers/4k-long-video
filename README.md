@@ -1,62 +1,64 @@
-# 4K Long Video Plug-in for RICOH THETA
+# Long Video HEVC Plug-in for RICOH THETA
 
-This sample plug-in is based on the 
-[CameraAPI Capture plug-in from Ricoh](https://github.com/ricohapi/theta-plugin-camera-api-sample).  
+Records 4K video with a maximum length of 1 hour 24 minutes. 
+It overcomes the 25 minute video limitation of the standard THETA V.
 
-The plug-in uses the CameraAPI to record 4K video. It bypasses the 25 minute
-video limitation of the standard camera.
+This plug-in  uses HEVC, not the default H.264.
 
-The plug-in should be installed into the RICOH THETA V with adb.
+To view the video on Windows 10 Movies and TV Player, you must
+add HEVC support to the player.
 
-## Development Environment
+![Windows 10 Movie and TV Player](doc/img/hevc-support.jpg)
 
-* RICOH THETA V
-* Firmware ver.2.40.2 and above
+Both Premiere Pro and CyberLink PowerDirector 17 can handle HEVC.
 
-    > Information on checking and updating the firmware is [here](https://theta360.com/en/support/manual/v/content/pc/pc_09.html).
+![long video info](doc/img/long-video-information.png)
 
-### RICOH THETA Plug-in SDK
+VLC media player 3.0.4+ also works with HEVC files.
 
-* Version: 1.0.1
+![vlc](doc/img/vlc.jpg)
 
-### Android Development Software
+The bitrate is reduced to 32Mbps. I'm hoping that due to the use of 
+HEVC, the quality will be comparable to 56Mpbs with H.264.
 
-* Android&trade; Studio 3.1+
-* gradle 3.1.3
-* Android&trade; SDK (API Level 25)
-* compileSdkVersion 26
-* buildToolsVersion "28.0.2"
-* minSdkVersion 25
-* targetSdkVersion 25
+I plan to submit the plug-in to the [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/).
+Look for "Long Video HEVC".
 
-### Operating System
+If you are are compiling from source, follow these steps for installation:
 
-* Windows 10 Version 1809
-* macOS High Sierra ver.10.13
+1. install plug-in with adb
+2. set permissions with Vysor
+3. use the THETA Desktop app to set the default plug-in "Long 4K Video"
 
-## Specification of this plugin
+## Usage
 
-* This plug-in capture still and video by using [Camera API](https://api.ricoh/docs/theta-plugin-reference/camera-api/), [AudioManager API](https://api.ricoh/docs/theta-plugin-reference/audio-manager-api/) and [PluginLibrary](https://github.com/ricohapi/theta-plugin-sdk/tree/master/pluginlibrary) for RICOH THETA V. This plug-in has been made as an example to show the way of using Camera API for RICOH THETA V.
-* After capturing still or video, the JPEG or MP4+WAV file is stored in /sdcard/DCIM/ folder.
-* The stored file name is "yyyyMMddHHmmss".jpg (.mp4 or .wav for video). "yyyyMMddHHmmss" is 20180123123456 when it is 12:34:56 Jan 23, 2018.
-* WebAPI can not be used when Camera API is used.
-* The .wav file includes 4ch spatial audio as a first-order ambisonics B-format.
-* The .mp4 file includes 4K video and 1ch monaural audio.
-* The metadata of the files (.mp4 and .jpg) which outputted by using CameraAPI will be missed than the case of using WebAPI. (We recommend to use WebAPI instead of CameraAPI.)
+1. put camera into plug-in mode
+2. take video
+3. stop plug-in by pressing lower mode button
+4. turn camera off by pressing the power button for 8 seconds
+5. turn camera back on and plug into your computer with a USB cable
+6. look for the file in /RICOH THETA V/Fixed Storage/DCIM/100RICOH
 
-## Getting Started
+![video file on theta](doc/img/video-file-on-theta.png)
 
-0. Open Vysor chrome app to see desktop of the camera.
-1. Initial setting for debugging
+## Post Production
 
-    At the first time to use this app, app need to be taken permissions to use camera and storage.
-    Settings → Apps → "CameraAPI Capture Plugin" → Permissions →
-      “Camera”, "Microphone" and “Storage” to be checked (turn ON).
+![premiere pro](doc/img/premiere-pro.jpg)
 
-2. Launch "CameraAPI Capture Plugin" app
-    (Ignore button on GUI)
-3. Press shutter button to take a photo/video
-4. Pull JPEG/MP4/WAV by adb
-    "adb pull /sdcard/DCIM/yyyyMMddHHmmss.jpg" ("yyyyMMddHHmmss" is 20180123123456 when it is 12:34:56 Jan 23, 2018.)
+When using premiere pro, you may need to inject the metadata into the file
+with [Spatial Media Metadata Injector](https://github.com/google/spatial-media/releases).
+
+![metadata injector](doc/img/metadata-injector.png)
+
+
+
+## Limitations
+
+* No spatial audio. The code can be modified to save a 4ch spatial audio .wav file with first-order ambisonics B-format. 
+The spatial audio file is not saved by default avoid people having to delete the file.
+
+
+
+
 
 ![Analytics](https://ga-beacon.appspot.com/UA-73311422-5/4k-long-video-plugin)
