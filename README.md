@@ -14,9 +14,6 @@ Both Premiere Pro and CyberLink PowerDirector 17 can handle HEVC.
 
 ![long video info](doc/img/long-video-information.png)
 
-VLC media player 3.0.4+ also works with HEVC files.
-
-![vlc](doc/img/vlc.jpg)
 
 The bitrate is reduced to 32Mbps. I'm hoping that due to the use of 
 HEVC, the quality will be comparable to 56Mpbs with H.264.
