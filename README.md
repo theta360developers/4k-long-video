@@ -72,7 +72,7 @@ Both Premiere Pro and PowerDirector support HEVC 360° video editing.
 ## Limitations
 
 * No spatial audio. The code can be modified to save a 4ch spatial audio .wav file with first-order ambisonics B-format. 
-The spatial audio file is not saved by default avoid people having to delete the file.
+The spatial audio file is not saved by default to avoid people having to delete the file.
 
 
 
