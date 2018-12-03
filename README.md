@@ -42,10 +42,26 @@ If you are are compiling from source, follow these steps for installation:
 
 ![premiere pro](doc/img/premiere-pro.jpg)
 
-When using premiere pro, you may need to inject the metadata into the file
+### Spatial Media Metadata Injector
+
+You may need to inject the metadata into the video file
 with [Spatial Media Metadata Injector](https://github.com/google/spatial-media/releases).
 
+Install the binary file with the link above. Pre-built applications are available for Mac and Windows.
+
+![spatial media icon](doc/img/spatial-media-injector.jpg)
+
+
+Open the file.
+
 ![metadata injector](doc/img/metadata-injector.png)
+
+Save the file with metadata injected with a new filename. Use the new video file
+with injected metadata in your applications and on YouTube/Facebook.
+
+![metadata injected](doc/img/meta-data-injected.jpg)
+
+
 
 
 
