@@ -3,6 +3,14 @@
 Records 4K video with a maximum length of 1 hour 24 minutes. 
 It overcomes the 25 minute video limitation of the standard THETA V.
 
+## Benefits
+
+* 336% increase in length of video saved to camera - increased time from 25 minutes to 84 minutes
+* 40% reduction in file size - save more videos of shorter length
+* 40% faster uploads to YouTube and Facebook
+
+## Technical Features
+
 This plug-in  uses HEVC, not the default H.264.
 
 To view the video on Windows 10 Movies and TV Player, you must
