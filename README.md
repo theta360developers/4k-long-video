@@ -5,7 +5,7 @@ It overcomes the 25 minute video limitation of the standard THETA V.
 
 ## Benefits
 
-* 336% increase in length of video saved to camera - increased time from 25 minutes to 84 minutes
+* 336% increase in length of video saved to camera
 * 40% reduction in file size - save more videos of shorter length
 * 40% faster uploads to YouTube and Facebook
 
