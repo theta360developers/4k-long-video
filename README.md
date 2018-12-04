@@ -69,7 +69,8 @@ Both Premiere Pro and PowerDirector support HEVC 360° video editing.
 
 ## Sharing Videos
 
-After injecting the metadata, you can upload the HEVC file to YouTube directly.
+After injecting the metadata, you can upload the HEVC file to YouTube directly. 
+With the metadata, it will automatically be detected as a 360° video.
 
 ![YouTube Upload](doc/img/youtube.jpg)
 
