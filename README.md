@@ -63,8 +63,20 @@ with injected metadata in your applications and on YouTube/Facebook.
 
 Both Premiere Pro and PowerDirector support HEVC 360° video editing.
 
+#### Premiere Pro
 
 ![premiere pro](doc/img/premiere-pro.jpg)
+
+#### CyberLink PowerDirector 17
+
+![CyberLink](doc/img/cyberlink.jpg)
+
+You do not need to export to H.265 HEVC. You can export with any encoding.
+However, if you want to keep the encoding the same, CyberLink does support
+HEVC format.
+
+![CyberLink Export](doc/img/cyberlink-export.jpg)
+
 
 
 ## Sharing Videos
