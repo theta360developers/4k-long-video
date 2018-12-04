@@ -116,7 +116,16 @@ https://youtu.be/UXRP6pAsCvQ
 ![Facebook](doc/img/facebook.jpg)
 
 
+## Other Video Players
 
+GOM Player works with 360° navigation.
+
+![GOM](doc/img/gom.jpg)
+
+---
+
+* VLC 3.0.4 did not display the video properly
+* DiVX media player did not provide 360° navigation
 
 
 
