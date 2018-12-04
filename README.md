@@ -24,6 +24,7 @@ The spatial audio file is not saved by default to avoid people having to delete 
 * Heat. I have not tested this fully, but the camera does seem to get hotter. You may need to blow a fan on the 
 outside of the camera body. Or, use it in the winter only. ;-)
 * Not all video players support HEVC. This is a new compression standard and a new frontier.
+* metadata is stripped out of the file. You may need to inject the metadata using a tool after your shoot. Instructions are below. 
 
 ---
 
