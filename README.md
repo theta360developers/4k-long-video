@@ -11,7 +11,23 @@ It overcomes the 25 minute video limitation of the standard THETA V.
 
 ## Technical Features
 
-This plug-in  uses HEVC, not the default H.264.
+* overcomes 25 minute limit imposed by standard THETA V firmware
+* Uses close to full internal storage of THETA V. Set to limit at 19GB per video file.
+* Uses HEVC, not the default H.264 for video compression
+* Reduces bitrate encoding to 32Mbps from 56Mbps, but retains most of the video quality
+* Strips out spatial audio file to save on storage space (can be easily added back into code)
+
+## Limitations
+
+* No spatial audio. The code can be modified to save a 4ch spatial audio .wav file with first-order ambisonics B-format. 
+The spatial audio file is not saved by default to avoid people having to delete the file.
+* Heat. I have not tested this fully, but the camera does seem to get hotter. You may need to blow a fan on the 
+outside of the camera body. Or, use it in the winter only. ;-)
+* Not all video players support HEVC. This is a new compression standard and a new frontier.
+
+---
+
+
 
 To view the video on Windows 10 Movies and TV Player, you must
 add HEVC support to the player.
@@ -22,9 +38,6 @@ Both Premiere Pro and CyberLink PowerDirector 17 can handle HEVC.
 
 ![long video info](doc/img/long-video-information.png)
 
-
-The bitrate is reduced to 32Mbps. I'm hoping that due to the use of 
-HEVC, the quality will be comparable to 56Mpbs with H.264.
 
 I plan to submit the plug-in to the [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/).
 Look for "Long Video HEVC".
@@ -101,12 +114,6 @@ https://youtu.be/UXRP6pAsCvQ
 
 ![Facebook](doc/img/facebook.jpg)
 
-## Limitations
-
-* No spatial audio. The code can be modified to save a 4ch spatial audio .wav file with first-order ambisonics B-format. 
-The spatial audio file is not saved by default to avoid people having to delete the file.
-* Heat. I have not tested this fully, but the camera does seem to get hotter. You may need to blow a fan on the 
-outside of the camera body. Or, use it in the winter only. ;-)
 
 
 
