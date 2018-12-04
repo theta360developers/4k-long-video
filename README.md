@@ -86,6 +86,8 @@ With the metadata, it will automatically be detected as a 360° video.
 
 ![YouTube Upload](doc/img/youtube.jpg)
 
+https://youtu.be/UXRP6pAsCvQ
+
 
 
 ## Limitations
