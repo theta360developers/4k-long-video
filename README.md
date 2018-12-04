@@ -92,6 +92,8 @@ With the metadata, it will automatically be detected as a 360° video.
 
 * No spatial audio. The code can be modified to save a 4ch spatial audio .wav file with first-order ambisonics B-format. 
 The spatial audio file is not saved by default to avoid people having to delete the file.
+* Heat. I have not tested this fully, but the camera does seem to get hotter. You may need to blow a fan on the 
+outside of the camera body. Or, use it in the winter only. ;-)
 
 
 
