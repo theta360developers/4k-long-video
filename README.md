@@ -60,6 +60,12 @@ If you are are compiling from source, follow these steps for installation:
 
 ![video file on theta](doc/img/video-file-on-theta.png)
 
+## For Mac
+
+For larger sized THETA files, use the Mac File Transfer app from Ricoh: https://support.theta360.com/en/download/
+
+Alternatively, use the Image Capture app built into Mac OS. The THETA will appear as a device.
+
 ## Post Production
 
 ### Spatial Media Metadata Injector
