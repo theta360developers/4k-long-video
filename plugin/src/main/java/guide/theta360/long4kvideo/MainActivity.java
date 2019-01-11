@@ -36,6 +36,9 @@ public class MainActivity extends PluginActivity implements CameraFragment.CFCal
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // should close plug-in when end processing completes
+        setAutoClose(true);
+
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
