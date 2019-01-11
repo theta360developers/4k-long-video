@@ -97,7 +97,9 @@ public class MainActivity extends PluginActivity implements CameraFragment.CFCal
 
     @Override
     protected void onPause() {
-        endProcess();
+        // added close
+//        close();
+//        endProcess();
 
         super.onPause();
     }
