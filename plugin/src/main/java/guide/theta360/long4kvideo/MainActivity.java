@@ -16,6 +16,7 @@
 
 package guide.theta360.long4kvideo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -79,6 +80,7 @@ public class MainActivity extends PluginActivity implements CameraFragment.CFCal
             @Override
             public void onKeyLongPress(int keyCode, KeyEvent event) {
                 if (keyCode == KeyReceiver.KEYCODE_MEDIA_RECORD) {
+
                     endProcess();
                 }
             }
