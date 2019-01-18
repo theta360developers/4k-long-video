@@ -149,10 +149,18 @@ public abstract class PluginActivity extends AppCompatActivity {
      * End processing
      */
     public void close() {
+//        if (isCamera) {
+//            notificationCameraOpen();
+//        }
+        notificationSuccess();
+    }
+
+    @Override
+    protected void onDestroy() {
         if (isCamera) {
             notificationCameraOpen();
         }
-        notificationSuccess();
+        super.onDestroy();
     }
 
     public void notificationCameraOpen() {
