@@ -1,4 +1,4 @@
-# Long Video HEVC Plug-in for RICOH THETA
+# Long Video High Compression Plug-in for RICOH THETA
 
 Records 4K video with a maximum length of 1 hour 24 minutes. 
 It overcomes the 25 minute video limitation of the standard THETA V.
