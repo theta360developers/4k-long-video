@@ -13,7 +13,7 @@ It overcomes the 25 minute video limitation of the standard THETA V.
 
 * overcomes 25 minute limit imposed by standard THETA V firmware
 * Uses close to full internal storage of THETA V. Set to limit at 19GB per video file.
-* Uses HEVC, not the default H.264 for video compression
+* Uses High Efficiency Compression, not the default H.264 for video compression
 * Reduces bitrate encoding to 32Mbps from 56Mbps, but retains most of the video quality
 * Strips out spatial audio file to save on storage space (can be easily added back into code)
 
@@ -23,7 +23,7 @@ It overcomes the 25 minute video limitation of the standard THETA V.
 The spatial audio file is not saved by default to avoid people having to delete the file.
 * Heat. I have not tested this fully, but the camera does seem to get hotter. You may need to blow a fan on the 
 outside of the camera body. Or, use it in the winter only. ;-)
-* Not all video players support HEVC. This is a new compression standard and a new frontier.
+* Not all video players support High Efficiency Video Compression. This is a new compression standard and a new frontier.
 * metadata is stripped out of the file. You may need to inject the metadata using a tool after your shoot. Instructions are below. 
 
 ---
