@@ -9,6 +9,10 @@ It overcomes the 25 minute video limitation of the standard THETA V.
 * 40% reduction in file size - save more videos of shorter length
 * 40% faster uploads to YouTube and Facebook
 
+## Installing the Plug-in
+
+Now in the [THETA Store](https://pluginstore.theta360.com/plugins/guide.theta360.long4kvideo/).
+
 ## Technical Features
 
 * overcomes 25 minute limit imposed by standard THETA V firmware
@@ -40,8 +44,7 @@ Both Premiere Pro and CyberLink PowerDirector 17 can handle HEVC.
 ![long video info](doc/img/long-video-information.png)
 
 
-I plan to submit the plug-in to the [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/).
-Look for "Long Video HEVC".
+This plug-in is in the THETA Store. You do not need to compile from source unless you want to modify the code.
 
 If you are are compiling from source, follow these steps for installation:
 
