@@ -311,14 +311,14 @@ public class CameraFragment extends Fragment {
 
 
             String videoFile = String.format("%s/100RICOH/4K_HEVC_%s.mp4", DCIM, getDateTime());
-            String wavFile = String.format("%s/plugin_%s.wav", DCIM, getDateTime());
-//            String videoWavFile = String.format("%s,%s", videoFile, wavFile);
+            String wavFile = String.format("%s/100RICOH/4K_HEVC_%s.wav.mp4", DCIM, getDateTime());
+            String videoWavFile = String.format("%s,%s", videoFile, wavFile);
             /**
              * deleting spatial audio to save on storage
              * uncomment the line above and comment out the line below to enable
              * spatial audio
              */
-            String videoWavFile = String.format("%s", videoFile);
+//            String videoWavFile = String.format("%s", videoFile);
             mMediaRecorder.setOutputFile(videoWavFile);
             mMediaRecorder.setPreviewDisplay(mSurfaceHolder.getSurface());
             mMediaRecorder.setOnErrorListener(onErrorListener);
